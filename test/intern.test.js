@@ -2,14 +2,14 @@ const Intern = require('../lib/Intern')
 describe('Intern', () => {
     it('Can get school', () => {
         const tSchool = 'Kansas';
-        const emp = new Intern(tSchool);
-        expect(emp.gitHub).toEqual(tSchool);
+        const emp = new Intern('Cooper', 2, 'coop@mail.com', tSchool);
+        expect(emp.school).toEqual(tSchool);
     })
 });
 describe('getSchool', () => {
     it('Can get GitHub school via getSchool()', () => {
         const testSchool = 'Kansas';
-        const emp = new Intern(testSchool);
+        const emp = new Intern('Cooper', 2, 'coop@mail.com', testSchool);
         expect(emp.getSchool()).toEqual(testSchool);
     });
 });
