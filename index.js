@@ -88,6 +88,7 @@ function addHtml(){
         <title>Document</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./dist/style.css">
     </head>
     
     <body>
@@ -128,8 +129,16 @@ function memHtml(emp){
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Id: ${id}</li>
-                            <li class="list-group-item">Email: ${email}</li>
-                            <li class="list-group-item">GitHub username: ${gitHub}</li>
+                            <li class="list-group-item">
+                                <p>Email:
+                                    <a href="mailto:${email}">${email}</a>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <p>GitHub Username:
+                                    <a href="https://www.github.com/${gitHub}">${gitHub}</a>
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -146,8 +155,12 @@ function memHtml(emp){
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Id: ${id}</li>
-                            <li class="list-group-item">Email: ${email}</li>
-                            <li class="list-group-item">GitHub username: ${school}</li>
+                            <li class="list-group-item">
+                                <p>Email:
+                                    <a href="mailto:${email}">${email}</a>
+                                 </p>
+                            </li>
+                            <li class="list-group-item">School: ${school}</li>
                         </ul>
                     </div>
                 </div>
@@ -164,8 +177,12 @@ function memHtml(emp){
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Id: ${id}</li>
-                            <li class="list-group-item">Email: ${email}</li>
-                            <li class="list-group-item">GitHub username: ${officeNum}</li>
+                            <li class="list-group-item">
+                                <p>Email:
+                                    <a href="mailto:${email}">${email}</a>
+                                </p>
+                            </li>
+                            <li class="list-group-item">Office number: ${officeNum}</li>
                         </ul>
                     </div>
                 </div>
